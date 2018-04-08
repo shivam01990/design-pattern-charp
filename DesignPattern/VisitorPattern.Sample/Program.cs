@@ -54,15 +54,15 @@ namespace VisitorPattern.Sample
     class PriceVisitor : Visitor
     {
         // Visit clerk
-        public void Visit(Pizza clerk)
+        public void Visit(Pizza pizza)
         {
-            DoVisit(clerk);
+            DoVisit(pizza);
         }
 
         // Visit director
-        public void Visit(Pasta director)
+        public void Visit(Pasta pasta)
         {
-            DoVisit(director);
+            DoVisit(pasta);
         }
 
         private void DoVisit(IElement element)
